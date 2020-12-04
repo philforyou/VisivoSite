@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Scripts{
+    <script src="~/js/AddAnimationClass.js"></script>
+}
+
+
+
+    <img id="backgroundimg" src="~/IMG/Bathroom.jpg" style=" position:absolute; display: block; width: 100vw; height: 100vh; object-fit: cover; z-index: -2;" />
+    <button id="testclick" style="width:300px; height:300px; margin-left:200px;" onclick="AddAnimationClass()"> </button>
+ 
+
+
+
+<style>
+    .hero-image {
+        background-image: url("/IMG/Bathroom.jpg");
+
+        height: 1500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+   
+        z-index: -50;
+    }
+</style>

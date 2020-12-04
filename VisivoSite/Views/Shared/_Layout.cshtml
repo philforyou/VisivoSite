@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - VisivoSite</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+<body>
+    <header>
+        <nav style="position:absolute; top:20px; right:10px; ">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="top_nav">
+                    <ul style="display:flex; flex-direction: row;">
+                        <li style="padding-right:15px;">
+                            <a asp-area="" asp-controller="Home" asp-action="Index">Products</a>
+                        </li>
+                        <li style="padding-right:15px;">
+                            <a asp-area="" asp-controller="Home" asp-action="Privacy">Portfolio</a>
+                        </li>
+                        <li style="padding-right:15px;">
+                            <a asp-area="" asp-controller="Home" asp-action="Privacy">Team</a>
+                        </li>
+                        <li style="padding-right:15px;">
+                            <a asp-area="" asp-controller="Home" asp-action="Privacy">Contact</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+
+        <nav id="left_nav">
+            <a class="logo" asp-area="" asp-controller="Home" asp-action="Index">\V</a>
+            <ul style="display:flex; flex-direction:row; transform: rotate(-90deg);">
+
+                <li style="padding-right:15px;">
+                    <a asp-area="" asp-controller="Home" asp-action="">News</a>
+                </li>
+                <li style="padding-right:15px;">
+                    <a asp-area="" asp-controller="Home" asp-action="Privacy">Exterior</a>
+                </li>
+                <li style="padding-right:15px;">
+                    <a asp-area="" asp-controller="Home" asp-action="Privacy">VR</a>
+                </li>
+                <li style="padding-right:15px;">
+                    <a asp-area="" asp-controller="Home" asp-action="Privacy">Interior</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" class="pb-3">
+        <div style="position:absolute; top:0px; bottom:0px; left:0px; right:0px; background-color:aquamarine; z-index:-1000; ">
+            <text style=" top: 48%; position: absolute; left: 49%;" class="logo">/V</text>
+        </div>
+        @RenderBody()
+    </main>
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - VisivoSite - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

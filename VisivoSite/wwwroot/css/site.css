@@ -1,0 +1,196 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+@font-face {
+    font-family:  Aeonik-Medium;
+    src: url("../Fonts/Aeonik-font/Aeonik-Medium.otf");
+    src: local("Aeonik-Medium"), url(../Fonts/Aeonik-font/Aeonik-Medium.otf) format("truetype");
+}
+
+
+#top_nav {
+    margin: 0 auto;
+    z-index: 0;
+    width: auto;
+    text-align: center;
+    font-size: 24px;
+    line-height: 2.0rem;
+    font-family: 'Aeonik-Medium';
+    color: #ffffff;
+    font-weight: 400;
+    /* font-weight: normal; */
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    float: right;
+    transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+    letter-spacing: 1px;
+}
+
+#left_nav {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    transition: opacity 400ms ease-in-out;
+    width: 120px;
+    background: rgba(0,0,0,0.6);
+
+}
+
+#left_nav ul {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position:relative;
+    top:50%;
+  
+}
+
+#lef_nav ul li a {
+    left:30%;
+    border: 2px solid transparent;
+    padding-left: 2px;
+    padding-right: 2px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+#left_nav ul li a:after {
+    content: '';
+    display: block;
+    width: 0;
+    border-bottom: 1px solid #ffffff;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    transition: width 400ms ease-in-out;
+}
+
+#left_nav ul {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    #left_nav ul li a {
+        display: block;
+        position: relative;
+        border: 2px solid transparent;
+        padding: 2px 0 4px;
+        cursor: pointer;
+    }
+
+    #left_nav ul li a, #top_nav ul li a:visited {
+     
+        font-size: 24px;
+        line-height: 2.0rem;
+        font-family: 'Aeonik-Medium';
+        color: white;
+        font-weight: 400;
+    }
+
+
+.logo {
+    font-family: 'Aeonik-Medium';
+    color: white;
+    font-size: 40px;
+    margin-left: 30px;
+   
+}
+
+#top_nav ul li a, #top_nav ul li a:visited {
+    color: white;
+
+}
+
+#top_nav ul {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    #top_nav ul li a {
+    display: block;
+    position: relative;
+    border: 2px solid transparent;
+    padding: 2px 0 4px;
+    cursor: pointer;
+}
+
+#top_nav ul li a:after {
+    content: '';
+    display: block;
+    width: 0;
+    border-bottom: 1px solid #ffffff;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    transition: width 400ms ease-in-out;
+}
+
+
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+
+
+
